@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="gray">#ddddde</color>
+    <!--分割线灰色，单独提出-->
+    <color name="bg_gray_line">#ececec</color>
+    <color name="gray_bottom_bg">#f8f8f8</color>
+</resources>

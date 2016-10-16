@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EmptyView 的自定义属性-->
+    <declare-styleable name="EmptyView">
+        <attr name="ep_bg" format="reference" />
+        <attr name="ep_alert" format="string|reference" />
+    </declare-styleable>
+</resources>
