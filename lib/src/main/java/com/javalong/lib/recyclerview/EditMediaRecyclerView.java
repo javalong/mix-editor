@@ -41,27 +41,19 @@ public class EditMediaRecyclerView extends RecyclerView {
     private void init() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         setLayoutManager(linearLayoutManager);
-        //setItemAnimator(new FadeInUpAnimator());
         setBackgroundResource(R.color.white);
         this.mediaList = new ArrayList<>();
         this.mAdapter = new MediaAdapter(getContext(), this.mediaList, this);
         setAdapter(this.mAdapter);
-        //initDrag();
+        initDrag();
     }
 
 
-//    public void initDrag() {
-//        ItemTouchHelper.Callback callback = new ItemTouchHelperCallback(mAdapter);
-//        mItemTouchHelper = new ItemTouchHelper(callback);
-//        mItemTouchHelper.attachToRecyclerView(mRecycler);
-//        mAdapter.setOnDragStartListener(new MediaAdapter.OnStartDragListener() {
-//            @Override
-//            public void onStartDrag(RecyclerView.ViewHolder viewHolder) {
-//                LogUtils.d(TAG, "onStartDrag()");
-//                mItemTouchHelper.startDrag(viewHolder);
-//            }
-//        });
-//    }
+    public void initDrag() {
+        ItemTouchHelper.Callback callback = new SimpleItemTouchCallback(mediaList);
+        mItemTouchHelper = new ItemTouchHelper(callback);
+        mItemTouchHelper.attachToRecyclerView(this);
+    }
 
     public void addMedia(Media media) {
         if (mediaList == null) {
