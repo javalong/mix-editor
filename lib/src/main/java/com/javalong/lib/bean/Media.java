@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class Media implements Serializable {
 
     public enum Type {
-        TEXT(0), IMAGE(1);
+        TEXT(0), IMAGE(1),PREVIEW(2);
 
         private int type;
 

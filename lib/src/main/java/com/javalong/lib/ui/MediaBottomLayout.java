@@ -30,6 +30,8 @@ public class MediaBottomLayout extends LinearLayout implements View.OnClickListe
         int topAndBottomMargin = DisplayUtils.dip2px(getContext(), 10);
         addVerticle(this, 1, topAndBottomMargin);
         createMediaButton(Media.Type.TEXT);
+        addVerticle(this, 1, topAndBottomMargin);
+        createMediaButton(Media.Type.PREVIEW);
     }
 
     private void createMediaButton(Media.Type image) {

@@ -60,6 +60,9 @@ public class EditMediaActivity extends AppCompatActivity implements MediaBottomL
             case IMAGE:
                 ViewUtils.openGallery(this,100);
                 break;
+            case PREVIEW:
+                MediaPreviewActivity.toThisActivity(this,rv_media.getMediaList());
+                break;
         }
     }
 
