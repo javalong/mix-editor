@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.javalong.lib.activity.EditMediaActivity"></activity>
+        <activity android:name="com.javalong.lib.activity.MediaPreviewActivity"></activity>
     </application>
 
 </manifest>

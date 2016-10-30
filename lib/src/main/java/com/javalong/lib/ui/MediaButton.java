@@ -42,6 +42,9 @@ public class MediaButton extends ImageTextButton {
             case TEXT:
                 super.initData(R.drawable.media_text, "文字");
                 break;
+            case PREVIEW:
+                super.initData(R.drawable.media_preview, "预览");
+                break;
         }
     }
 }
